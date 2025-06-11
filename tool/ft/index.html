@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォントテスト</title>
+    <style>
+        @font-face {
+            /* ここにfont-familyで指定したい名前を書く*/
+            font-family: "shinonome14";
+
+            /* フォントが置かれているパスを書く */
+            src: url("./assets/font/JF-Dot-Shinonome14.ttf") format("truetype");
+        }
+
+        @font-face {
+            /* ここにfont-familyで指定したい名前を書く*/
+            font-family: "8bitoperator";
+
+            /* フォントが置かれているパスを書く */
+            src: url("./assets/font/8bitoperator_jve.otf") format("opentype");
+        }
+
+        @font-face {
+            /* ここにfont-familyで指定したい名前を書く*/
+            font-family: "undertale-deltarune";
+
+            /* フォントが置かれているパスを書く */
+            src: url("./assets/font/undertale-deltarune-text-font-extended.otf") format("opentype");
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+
+        body>* {
+            margin-block-start: 0;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .first {
+            padding-block-start: 0.67em;
+        }
+
+        .fontwrapper>* {
+            margin: 1em 0;
+            font-family: "shinonome14", sans-serif;
+            font-weight: normal;
+        }
+
+        .fontwrapper2>* {
+            margin: 1em 0;
+            font-family: "8bitoperator", "undertale-deltarune", sans-serif;
+            font-weight: normal;
+        }
+
+        i {
+            display: block;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        footer {
+            flex: 1 100%;
+            margin: 0;
+            padding: 8px;
+            background-color: silver;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="first">フォントテストサイト</h1>
+    <hr>
+    <div class="fontwrapper" id="fontwrapper">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <div></div>
+        <i></i>
+        <strong></strong>
+        <pre></pre>
+    </div>
+    <div class="fontwrapper2" id="fontwrapper2">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <div></div>
+        <i></i>
+        <strong></strong>
+        <pre></pre>
+    </div>
+    <footer>
+        <p>font:JFドット東雲ゴシック14 publicdomain:The Electronic Font Open Laboratory <a
+                href="http://jikasei.me/font/jf-dotfont/"></a></p>
+        <p>font:8bitoperator designer:Jayvee Enaguas <a
+                href="https://fontmeme.com/fonts/8bitoperator-jve-font/">link</a></p>
+        <p>font:undertale deltarune text font extended createdby:Viika (Vexian Empire) <a
+                href="https://fontstruct.com/fontstructions/show/2008226/undertale-deltarune-text-font-extended">link</a>
+        </p>
+    </footer>
+    <script>
+        const vieweres = document.getElementById("fontwrapper");
+        for (const v of vieweres.children) {
+            v.innerText = "＊ ABCabcあいうアイウｱｲｳ漢字鬱 !\"#$%&'()-=^~\\|@`[{;+:*}],<.>/?_";
+        }
+
+        const vieweres2 = document.getElementById("fontwrapper2");
+        for (const v of vieweres2.children) {
+            v.innerText = "* ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890 !\"#$%&'()-=^~\\|@`[{;+:*}],<.>/?_";
+        }
+    </script>
+</body>
+
+</html>
