@@ -4,8 +4,9 @@ body {
     border: 0;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     font-family: "Noto Sans JP", sans-serif;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 h1 {
