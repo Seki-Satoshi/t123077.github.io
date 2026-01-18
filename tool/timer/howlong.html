@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あと何時</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bytesized&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Fragment+Mono:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=LXGW+WenKai+Mono+TC&family=Libertinus+Mono&family=Major+Mono+Display&family=Noto+Sans+JP:wght@100..900&family=Oxygen+Mono&family=Reddit+Mono:wght@200..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Sixtyfour&family=Sono:wght,MONO@200..800,1&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&family=Workbench&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>How long does it take?</h1>
+    <div class="wrapper">
+        <hr>
+        <div id="time" class="google-sans-code-regular"></div>
+        <hr>
+        <div class="lefts">
+            残り
+            <div id="longer"></div>
+            <div id="longest"></div>
+        </div>
+    </div>
+
+    <div class="rights">
+        <label for="settimer"><input type="time" name="settimer" id="settimer" step="1"></label>
+        まで
+        <button id="ok">決定</button>
+    </div>
+    <footer>
+        <div id="note"></div>
+        <select id="font-selector">
+            <option value="ubuntu-mono-regular">Ubuntu Mono</option>
+            <option value="google-sans-code-regular" selected>Google Sans Code</option>
+            <option value="jetbrains-mono-regular">JetBrains Mono</option>
+            <option value="courier-prime-regular">Courier Prime</option>
+            <option value="cutive-mono-regular">Cutive Mono</option>
+            <option value="suse-mono-regular">SUSE Mono</option>
+            <option value="oxygen-mono-regular">Oxygen Mono</option>
+            <option value="major-mono-display-regular">Major Mono Display</option>
+            <option value="fragment-mono-regular">Fragment Mono</option>
+            <option value="libertinus-mono-regular">Libertinus Mono</option>
+            <option value="sono-regular">Sono</option>
+            <option value="ubuntu-sans-mono-regular">Ubuntu Sans Mono</option>
+            <option value="victor-mono-regular">Victor Mono</option>
+            <option value="reddit-mono-regular">Reddit Mono</option>
+            <option value="sixtyfour-regular">Sixtyfour</option>
+            <option value="bytesized-regular">Bytesized</option>
+            <option value="lxgw-wenkai-mono-tc-regular">LXGW WenKai Mono TC</option>
+            <option value="workbench-regular">Workbench</option>
+        </select>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

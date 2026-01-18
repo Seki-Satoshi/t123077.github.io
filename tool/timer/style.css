@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 10vw;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    font-size: 10vw;
+}
+
+hr {
+    margin: 5vh 15vw;
+}
+
+#time {
+    text-align: center;
+    margin: 0;
+    font-size: 16vw;
+}
+
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.google-sans-code-regular {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jetbrains-mono-regular {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cutive-mono-regular {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.suse-mono-regular {
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oxygen-mono-regular {
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fragment-mono-regular {
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libertinus-mono-regular {
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sono-regular {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 1;
+}
+
+.ubuntu-sans-mono-regular {
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.victor-mono-regular {
+    font-family: "Victor Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.reddit-mono-regular {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sixtyfour-regular {
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+}
+
+.bytesized-regular {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lxgw-wenkai-mono-tc-regular {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.workbench-regular {
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+}
+
+.lefts {
+    margin-left: 5vw;
+}
+
+.rights {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 960px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #time {
+        font-size: 10rem;
+    }
+
+    .wrapper {
+        font-size: 3rem;
+    }
+}
